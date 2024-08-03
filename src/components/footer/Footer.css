@@ -1,0 +1,142 @@
+
+
+/*==================Satart of Footer=============*/
+
+.footer {
+    background-color: var(--color-black);
+  }
+  
+  .container__footer {
+    width: 90%;
+    margin: 0 auto;
+    padding: 80px 0 20px 0;
+  }
+  .content__footer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px , 1fr));
+   
+  }
+  .footer__jllc {
+    display: grid;
+    place-items: center;
+  }
+  
+  .footer__jllc-item {
+    display: flex;
+    width: 150px;
+    align-items: center;
+    justify-content: space-between;
+    
+  }
+  .legal h4 {
+    margin-bottom: 20px;
+  }
+  
+  .contact h4  {
+    margin-bottom: 20px;
+  }
+  .contact__item {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    
+  }
+  .contact__item i {
+    font-size: 1.5rem;
+  }
+  
+  .contact__item:hover i {
+    color: var(--color-lime-green);
+    transform: scale(1.1);
+    transition: 800ms;
+  }
+  
+  .contact__item p {
+    margin-left: 20px;
+    
+    
+  }
+  
+  .social__networks {
+    
+  }
+  
+  
+  
+  .social__networks-item {
+    display: flex;
+    width: 200px;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .fa-brands {
+    font-size: 2rem;
+  }
+  
+  .fa-brands:hover {
+    color: #d2fc51;
+    transform: scale(1.1);
+    transition: 800ms;
+  }
+  
+  .final__foot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    letter-spacing: 1px;
+    margin-top: 30px;
+  }
+
+  
+  @media screen and (max-width: 768px) {
+  
+    body {
+      overflow-x: hidden;
+    }
+  
+  
+  
+    /*/////////////////////// toggle///////////////////// */
+  
+    .nav__hero {
+      
+    }
+  
+    .nav__items {
+      position: absolute;
+      display: none;
+      width: 300px;
+      height: 100%;
+      background-color: var(--color-black);
+      top: 0;
+      right: -100%;
+      margin: 0;
+      justify-content: space-between;
+      list-style: none;
+      transition: all 500ms;
+  }
+  
+  .nav__item {
+    margin: 50px 0;
+  }
+  
+  .nav__link {
+    padding: 10px 15px;
+    border-radius: 10px;
+  }
+  
+  .visible {
+    right: 0;
+  }
+  
+
+  
+    
+  
+}
+  
+  
+  

@@ -1,0 +1,34 @@
+.hero {
+    width: 90%;
+    margin: 0 auto;
+    height: 10vh;
+}
+
+.hero__container {
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__hero {
+
+}
+
+.items__nav {
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+    list-style: none;
+}
+
+
+.item__nav a {
+    text-decoration: none
+}
+
+@media screen and (max-width: 768px) {
+    .items__nav {
+        display: none;
+    }
+}
