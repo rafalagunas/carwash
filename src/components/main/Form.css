@@ -1,0 +1,38 @@
+.form__carwash {
+
+}
+
+
+.form__carwash_container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.btn__from_container {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.btn__from_container > button {
+    background-color: var(--primary-color);
+    padding: 10px 40px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: var(--border-radius-general);
+    transition: all 400ms;
+    border-radius: var(--border-radius-general);
+    font-size: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+    .form__carwash_container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+}
+ 

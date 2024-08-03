@@ -107,11 +107,7 @@
     border-radius: 10px;
 }
 
-.main .row__three .services__carwash > .card {
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0px 0px 39px 9px rgba(0,0,0,0.1);
-}
+
 
 .main .row__three .services__carwash > .card > .card__content {
     padding: 15px;
@@ -162,7 +158,10 @@
   }
   
 
-
+.main .row__five {
+    width: 90%;
+    margin: 0 auto;
+}
 
   @media screen and (max-width: 768px) {
     .main .row__three .services__carwash {

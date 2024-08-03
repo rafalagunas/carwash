@@ -4,7 +4,254 @@
   box-sizing: border-box;
 }
 
+:root {
+  --primary-color: #db2d20;
+  --text-color: #090d1f;
+  --input-color:#D9D9D9;
+  --placeholder-color: #6c6c6e;
+  --border-radius-general: 5px;
+}
+
+
+
+
 body {
   font-family: "Poppins", sans-serif;
   background-color: #f3f3f3;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+
+}
+
+input {
+  font-family: 'Poppins', sans-serif;
+  /* font-size: 1rem; */
+}
+
+button {
+  font-family: 'Poppins', sans-serif;
+}
+
+a {
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+}
+
+input::placeholder{
+  color: var(--placeholder-color);
+
+} 
+
+textarea {
+  font-family: 'Poppins', sans-serif;
+}
+
+.label__general {
+  font-weight: 500;
+  display: block;
+  border-radius: var(--border-radius-general);
+  color: var(--text-color);
+}
+
+
+.inputs__generic {
+  border: none;
+  outline: none;
+  width: 100%;
+  background-color: var(--input-color);
+  color: var(--text-color);
+  text-indent: 15px;
+}
+
+/* Inputs general */
+
+.inputs__general {
+  width: 100%;
+  background-color: var(--input-color);
+  color: var(--text-color);
+  margin-top: 10px;
+  border: none;
+  outline: none;
+  padding: 10px 0;
+  border-radius: 3px;
+  text-indent: 15px;
+  
+
+}
+
+
+.inputs__general:hover {
+  outline: 2px solid gray;
+ 
+}
+
+
+.inputs__general:focus {
+  outline: 2px solid gray;
+}
+
+
+
+
+/* STYLES OF SELECT */
+
+::selection{
+	
+}
+.select__container {
+width: 100%;
+position: relative;
+text-align: left;
+}
+
+
+.select__container .search input{
+padding: 10px 0;
+width: 100%;
+outline: none;
+border-radius: 5px;
+text-indent: 15px;
+border: 2px solid #B3B3B3;
+}
+/* .select__container .search input:focus{
+border: 2px solid #1F319D;
+} */
+.select__container .search input::placeholder{
+color: #bfbfbf;
+} 
+
+.select-btn__general.warning {
+margin-top: 5px;
+}
+
+.select__container .select-btn, li{
+display: flex;
+align-items: center;
+cursor: pointer;
+}
+
+.select__container .select-btn {
+height: 40px;
+padding: 0 20px;
+background: var(--input-color);
+color: var(--text-select-color);
+border-radius: 5px 5px 5px 5px;
+justify-content: space-between;
+box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+ 
+}
+
+
+.select__container_title  {
+  overflow: hidden;
+  width: 90%;
+
+}
+
+
+.select__container_title p {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+
+
+.select__container .select-btn.active {
+  border-radius: 5px 5px 0 0;
+}
+
+
+
+
+.select__container .search .chevron__down {
+  top: 50%;
+  left: 15px;
+  color: #999;
+  pointer-events: none;
+  transform: translateY(-50%);
+  position: absolute;
+}
+  
+
+.select__container .select-btn .chevron__down {
+  transition: transform 0.3s linear;
+}
+.select__container .select-btn.active .chevron__down {
+  transform: rotate(-180deg);
+}
+
+.select__container .content{
+  position: absolute;
+  /* top: 70px; */
+  width: 100%;
+  height: 0;
+  background: var(--input-color);
+  border-radius: 0 0 5px 5px;
+  z-index: 1;
+  transition: all 500ms;
+  padding: 0 10px 0 10px;
+
+
+}
+
+.select__container .content.active{
+  height: 260px;
+  max-height: 280px;
+  padding: 5px 10px 5px 10px;
+}
+
+
+.select__container .options {
+  height: 0;
+  transition: opacity 300ms;
+  margin-top: 10px;
+  max-height: 250px;
+  overflow: auto;
+  padding-right: 7px;
+}
+
+.select__container .options.active {
+  height: 230px;
+}
+.select__container .options::-webkit-scrollbar{
+  width: 7px;
+}
+.select__container .options::-webkit-scrollbar-track{
+background: #f1f1f1;
+border-radius: 25px;
+}
+.select__container .options::-webkit-scrollbar-thumb{
+background: #ccc;
+border-radius: 25px;
+}
+.select__container .options::-webkit-scrollbar-thumb:hover{
+background: #b3b3b3;
+}
+.select__container .options li{
+height: 40px;
+padding: 0 13px;
+color: var(--text-color);
+
+}
+.select__container .options li:hover, li.selected{
+border-radius: 5px;
+/* background: #f2f2f2; */
+background-color: var(--primary-color);
+color: #fff;
+}
+
+
+
+
+.chevron__down {
+  fill: var(--svg-color);
+}
+
+.select-btn__general {
+  margin-top: 10px;
 }
