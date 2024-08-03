@@ -1,9 +1,9 @@
 import React from 'react'
 
-const ViewLoading = () => {
+const ViewLoading: React.FC = () => {
   return (
     <div>
-      HlaaSAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+     
     </div>
   )
 }
