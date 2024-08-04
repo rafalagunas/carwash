@@ -257,3 +257,15 @@ color: #fff;
 .select-btn__general {
   margin-top: 10px;
 }
+
+@media screen and (max-width: 768px) {
+  .inputs__general {
+    padding: 15px 0 !important;
+  }
+
+  .select__container .select-btn {
+    height: 50px;
+     
+    }
+  
+}
