@@ -169,6 +169,24 @@
     margin: 0 auto;
 }
 
+.row__possession {
+    margin-bottom: 40px;
+}
+
+.title__possession {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.title__possession > p {
+    padding: 20px;
+    background-color: #ff313142;
+    color: #d80000;
+    font-weight: 500;
+    border-radius: 10px;
+}
+
+
   @media screen and (max-width: 768px) {
     .main .row__three .services__carwash {
         display: grid;

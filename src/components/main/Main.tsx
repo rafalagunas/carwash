@@ -9,6 +9,11 @@ const Main: React.FC = () => {
   return (
     <div className='main'>
       <Layout />
+      <div className='row__possession'>
+        <div className='title__possession'>
+            <p>Todos nuestros servicios cuentan con seguro para lluvia. Si llueve y se te ensucia, lo lavamos gratis dentro de las 24 horas siguientes del lavado</p>
+        </div>
+      </div>
       <div className='row__two'>
         <div className='our__title_container'>
             <p>

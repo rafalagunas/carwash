@@ -5,7 +5,7 @@
 }
 
 :root {
-  --primary-color: #db2d20;
+  --primary-color: #ff3131;
   --text-color: #090d1f;
   --input-color:#D9D9D9;
   --placeholder-color: #6c6c6e;
@@ -85,12 +85,14 @@ textarea {
 
 .inputs__general:hover {
   outline: 2px solid gray;
+  border-radius: 3px;
  
 }
 
 
 .inputs__general:focus {
   outline: 2px solid gray;
+  border-radius: 3px;
 }
 
 

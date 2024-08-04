@@ -1,8 +1,18 @@
 
-import React from 'react'
 import './Layout.css'
+import React, { useRef } from 'react';
+import { storeMian } from '../../zustand/store';
 
 const Layout: React.FC = () => {
+
+    const setVariationMain = storeMian(state => state.setVariationMain)
+
+    const handleScrollToCard = () => {
+        setVariationMain('card')
+     
+    };
+  
+
   return (
     <div className='layout'>
         <div className='layout__container'>
@@ -13,7 +23,7 @@ const Layout: React.FC = () => {
                     </div>
                     <p className='text'>Somos uno de los mejores autolavados de la ciudad, siempre ofreciendo nuestros servicios con la más alta calidad.</p>
                     <div className='btn__main'>
-                        <button className='btn__general-primary'>Contratar</button>
+                        <button className='btn__general-primary' onClick={handleScrollToCard}>Contratar</button>
                     </div>
                 </div>
             </div>
@@ -23,6 +33,7 @@ const Layout: React.FC = () => {
                 </div>
             </div>
         </div>
+     
     </div>
   )
 }
