@@ -82,7 +82,7 @@ const Form: React.FC = () => {
     
         // URL codificada para WhatsApp API
         const encodedMessage = encodeURIComponent(message);
-        const phoneNumber = "+529998049373"; // Reemplaza con tu número de WhatsApp
+        const phoneNumber = "+529997398698"; // Reemplaza con tu número de WhatsApp
         const url = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodedMessage}`;
     
         // Abrir enlace en una nueva pestaña
