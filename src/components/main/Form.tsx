@@ -70,7 +70,7 @@ const Form: React.FC = () => {
     const onFinish = (values: any) => {
         // Construir el mensaje para WhatsApp
         const message = `
-          Nuevo pedido de servicio de lavado de autos:
+          Hola, me gustaría agendar un servicio:
     
           Nombre: ${values.name}
           Teléfono: ${values.phone}

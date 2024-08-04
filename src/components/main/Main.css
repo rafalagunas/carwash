@@ -184,6 +184,15 @@
 }
 
 @media screen and (max-width: 768px) {
+  .our__title_container {
+    text-align: center;
+    text-justify: center;
+    box-shadow: 0px 0px 100px 5px rgba(0, 0, 0, 0.1);
+    padding: 50px 30px;
+    border-radius: 10px;
+    color: var(--color-text);
+  }
+
   .main .row__three .services__carwash {
     display: grid;
     grid-template-columns: 1fr;

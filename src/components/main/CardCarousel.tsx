@@ -96,12 +96,13 @@ const CardCarousel = () => {
       imgSrc: img3, 
       services: [
         { icon: soap, label: 'Exterior' },
-        { icon: shapoo, label: 'Shampoo y Cera' },
+        { icon: shapoo, label: 'Shampoo' },
         { icon: wheels, label: 'Rines' },
         { icon: car, label: 'Interiores'},
         { icon: vacuum, label: 'Aspirado'},
         { icon: rug, label: 'Lavado de tapetes'},
         { icon: drop, label: 'Humectante plásticos y pieles'},
+        { icon: shapoo, label: 'Cera' },
         { icon: scent, label: 'Aroma'}
       ]
     }

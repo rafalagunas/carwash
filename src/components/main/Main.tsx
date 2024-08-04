@@ -2,6 +2,9 @@ import React from 'react'
 import Layout from './Layout'
 import CardCarousel from './CardCarousel'
 import Form from './Form'
+
+import drop from '../../assets/svg/droplet-solid.svg';
+
 import './Main.css'
 
 
@@ -11,13 +14,13 @@ const Main: React.FC = () => {
       <Layout />
       <div className='row__possession'>
         <div className='title__possession'>
-            <p>Todos nuestros servicios cuentan con seguro para lluvia. Si llueve y se te ensucia, lo lavamos gratis dentro de las 24 horas siguientes del lavado</p>
+            <p>Todos nuestros servicios cuentan con seguro para lluvia <img src={drop} width={15} height={15} />. <br/> Si llueve y se te ensucia, lo lavamos gratis dentro de las 24 horas siguientes del lavado</p>
         </div>
       </div>
       <div className='row__two'>
         <div className='our__title_container'>
             <p>
-                <span className='our__title'>Somos un autolavado</span> y nos caracterizamos por nuestros servicios a domicilio, ofreciendo calidad y puntualidad porque sabemos que tu tiempo es lo más importante.
+                <span className='our__title'>Si tienes el auto sucio, necesitas una limpieza y no tienes tiempo de llevarlo a lavar</span> somos la mejor opción para ti, ofreciéndote la mejor calidad gracias a que usamos los mejores productos del mercado para cuidar tu coche y puntualidad porque sabemos que tu tiempo es lo más importante.
             </p>
         </div>
         
