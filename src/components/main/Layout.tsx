@@ -19,11 +19,11 @@ const Layout: React.FC = () => {
             <div className='left'>
                 <div>
                     <div className='title'>
-                        <h1>Servicios de autolavado a domicilio</h1>
+                        <h1>Lavamos tu coche en la puerta de tu casa</h1>
                     </div>
-                    <p className='text'>Somos uno de los mejores autolavados de la ciudad, siempre ofreciendo nuestros servicios con la más alta calidad.</p>
+                    <p className='text'>Porque sabemos que estás harto de que te dejen plantado o no te contesten, llegamos para darte el servicio más puntual y con la mejor calidad.</p>
                     <div className='btn__main'>
-                        <button className='btn__general-primary' onClick={handleScrollToCard}>Contratar</button>
+                        <button className='btn__general-primary' onClick={handleScrollToCard}>Ya no quiero que me rayen el auto, agendar</button>
                     </div>
                 </div>
             </div>
