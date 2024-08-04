@@ -2,7 +2,6 @@ import React from 'react'
 import './header.css'
 import { Link } from 'react-router-dom'
 import logo from '../../assets/svg/logo.png'
-import background from '../../assets/mexicano.png'
 
 const Header: React.FC = () => {
   return (
