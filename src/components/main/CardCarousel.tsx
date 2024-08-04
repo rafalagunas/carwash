@@ -26,21 +26,41 @@ import rug from '../../assets/svg/rug-solid.svg';
 import drop from '../../assets/svg/droplet-solid.svg';
 import car from '../../assets/svg/car-solid.svg';
 
+
+
+
 const CardCarousel = () => {
   const { variationMain }: any = useStore(storeMian);
   const carouselRef = useRef<HTMLDivElement>(null);
 
   const setVariationMain = storeMian(state => state.setVariationMain)
-
+  const smoothScrollTo = (element: HTMLElement, duration: number) => {
+    const start = window.scrollY;
+    const end = element.getBoundingClientRect().top + window.scrollY;
+    const distance = end - start;
+    let startTime: number | null = null;
+  
+    const animation = (currentTime: number) => {
+      if (startTime === null) startTime = currentTime;
+      const progress = currentTime - startTime;
+      const percentage = Math.min(progress / duration, 1);
+      window.scrollTo(0, start + distance * percentage);
+      if (progress < duration) {
+        requestAnimationFrame(animation);
+      }
+    };
+  
+    requestAnimationFrame(animation);
+  };
+  
 
   useEffect(() => {
     if (variationMain === 'card' && carouselRef.current) {
-      carouselRef.current.scrollIntoView({ behavior: 'smooth' });
+      smoothScrollTo(carouselRef.current, 1000); // 1000 ms = 1 segundo
     }
-    setVariationMain('')
-
+    setVariationMain('');
   }, [variationMain]);
-
+  
   const sendForm = () => {
     setVariationMain('form')
   }
