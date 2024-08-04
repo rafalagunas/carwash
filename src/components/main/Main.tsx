@@ -70,7 +70,7 @@ const Main: React.FC = () => {
     </div>
     <div className='row__possession'>
         <div className='title__possession'>
-            <p>Recuerda al finalizar tu lavado, pedir tu tarjeta de cliente frecuente en donde después de la séptima limpieza, te regalaremos un lavado platino totalmente gratis.</p>
+            <p>Recuerda al finalizar tu lavado, pedir tu tarjeta de cliente frecuente en donde después de la séptima limpieza, te regalaremos un lavado platino COMPLETAMENTE GRATIS.</p>
         </div>
       </div>
     <div className='row__five'>
