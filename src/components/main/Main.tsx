@@ -20,7 +20,7 @@ const Main: React.FC = () => {
       <div className='row__two'>
         <div className='our__title_container'>
             <p>
-                <span className='our__title'>Si tienes el auto sucio, necesitas una limpieza y no tienes tiempo de llevarlo a lavar</span> somos la mejor opción para ti, ofreciéndote la mejor calidad gracias a que usamos los mejores productos del mercado para cuidar tu coche y puntualidad porque sabemos que tu tiempo es lo más importante.
+                <span className='our__title'>Si tienes el auto sucio y necesitas una limpieza pero no tienes tiempo de llevarlo a lavar</span> somos la mejor opción para ti, ofreciéndote la mejor calidad gracias a que usamos los mejores productos del mercado para cuidar tu coche y puntualidad porque sabemos que tu tiempo es lo más importante.
             </p>
         </div>
         
