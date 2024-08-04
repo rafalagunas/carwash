@@ -1,6 +1,6 @@
 
 import './Layout.css'
-import React, { useRef } from 'react';
+import React from 'react';
 import { storeMian } from '../../zustand/store';
 
 const Layout: React.FC = () => {
