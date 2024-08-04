@@ -1,5 +1,5 @@
 import { Suspense, lazy } from 'react';
-import { BrowserRouter as Router, Route, Navigate } from 'react-router-dom';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import RoutesWithNotFound from './utils/routes-with-not-found';
 import RootPage from './pages/RootPage';
 
