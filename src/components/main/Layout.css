@@ -45,6 +45,9 @@
 }
 
 @media screen and (max-width: 768px) {
+  .layout {
+    height: 75vh;
+  }
   .layout__container {
     display: grid;
     height: 100%;

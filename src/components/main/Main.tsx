@@ -28,7 +28,7 @@ const Main: React.FC = () => {
       <div className='row__four'>
             <div>
                 <div className='title__container_our_services'>
-                    <p className='title'>Nustros servicios</p>
+                    <p className='title'>Nuestros servicios</p>
                 </div>
                 <div className='item__service_container'>
                     <div className='item__service'>
@@ -70,7 +70,7 @@ const Main: React.FC = () => {
     </div>
     <div className='row__possession'>
         <div className='title__possession'>
-            <p>Recuerda al finalizar tu lavado, pedir tu tarjeta de cliente frecuente en donde después de la 7ma limpieza, te regalaremos un lavado platino totalmente gratis.</p>
+            <p>Recuerda al finalizar tu lavado, pedir tu tarjeta de cliente frecuente en donde después de la séptima limpieza, te regalaremos un lavado platino totalmente gratis.</p>
         </div>
       </div>
     <div className='row__five'>
