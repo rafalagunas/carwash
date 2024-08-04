@@ -17,7 +17,7 @@ const Main: React.FC = () => {
       <div className='row__two'>
         <div className='our__title_container'>
             <p>
-                <span className='our__title'>Somos un autolavado</span> que nos caracterizamos por nuestros servicios a domicilio, ofreciendo calidad y puntualidad a nuestros clientes para optimizar su tiempo.
+                <span className='our__title'>Somos un autolavado</span> y nos caracterizamos por nuestros servicios a domicilio, ofreciendo calidad y puntualidad porque sabemos que tu tiempo es lo más importante.
             </p>
         </div>
         
@@ -65,6 +65,11 @@ const Main: React.FC = () => {
             
         </div>
     </div>
+    <div className='row__possession'>
+        <div className='title__possession'>
+            <p>Recuerda al finalizar tu lavado, pedir tu tarjeta de cliente frecuente en donde después de la 7ma limpieza, te regalaremos un lavado platino totalmente gratis.</p>
+        </div>
+      </div>
     <div className='row__five'>
         <Form />
     </div>

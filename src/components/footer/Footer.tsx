@@ -31,7 +31,7 @@ const Footer: React.FC = () => {
             </div>
             <div className="contact__item">
               <i className="fa-solid fa-location-dot"></i>
-              <p>Merida Quintana Roo, México</p>
+              <p>Mérida, Yucatán, México</p>
             </div>
           </div>
           <div className="social__networks">

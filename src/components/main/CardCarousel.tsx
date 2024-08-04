@@ -13,9 +13,9 @@ import 'swiper/css/pagination';
 import { Pagination } from 'swiper/modules';
 
 // Import images
-import img1 from '../../assets/main/ZqyIWR5LeNNTxvyq_WhatsAppImage2024-08-02at1.18.10AM.avif';
-import img2 from '../../assets/main/ZqyIWx5LeNNTxvys_WhatsAppImage2024-08-02at1.18.10AM-1-.avif';
-import img3 from '../../assets/main/ZqyIXx5LeNNTxvyv_WhatsAppImage2024-08-02at1.18.09AM.avif';
+import img1 from '../../assets/main/express.png';
+import img2 from '../../assets/main/premium.png';
+import img3 from '../../assets/main/platinum.png';
 
 import soap from '../../assets/svg/soap-solid.svg';
 import shapoo from '../../assets/svg/jug-detergent-solid.svg';
@@ -68,7 +68,7 @@ const CardCarousel = () => {
   const services = [
     {
       id: 1,
-      title: 'Servicio Básico',
+      title: 'Servicio Express',
       imgSrc: img1, 
       services: [
         { icon: soap, label: 'Exterior' },
@@ -78,7 +78,7 @@ const CardCarousel = () => {
     },
     {
       id: 2,
-      title: 'Servicio Intermedio',
+      title: 'Servicio Premium',
       imgSrc: img2, 
       services: [
         { icon: soap, label: 'Exterior' },
@@ -92,17 +92,17 @@ const CardCarousel = () => {
     },
     {
       id: 3,
-      title: 'Servicio Premium',
+      title: 'Servicio Platino',
       imgSrc: img3, 
       services: [
         { icon: soap, label: 'Exterior' },
-        { icon: shapoo, label: 'Shampoo' },
+        { icon: shapoo, label: 'Shampoo y Cera' },
         { icon: wheels, label: 'Rines' },
         { icon: car, label: 'Interiores'},
         { icon: vacuum, label: 'Aspirado'},
         { icon: rug, label: 'Lavado de tapetes'},
         { icon: drop, label: 'Humectante plásticos y pieles'},
-        { icon: scent, label: 'Humectante plásticos y pieles'}
+        { icon: scent, label: 'Aroma'}
       ]
     }
   ];
