@@ -27,6 +27,40 @@
     font-size: 1rem;
 }
 
+.flatpickr-months .flatpickr-month {
+    background-color: #db2d20 !important; /* Color de fondo del calendario */
+}
+
+.flatpickr-current-month .flatpickr-monthDropdown-months {
+    background-color: transparent !important;
+
+}
+
+.flatpickr-current-month .flatpickr-monthDropdown-months .flatpickr-monthDropdown-month {
+    background-color: #db2d20 !important;
+}
+
+.flatpickr-current-month .flatpickr-monthDropdown-months option:hover {
+    background-color: #db2d20 !important;
+}
+
+
+.flatpickr-weekdays {
+    background-color: #db2d20 !important;
+}
+
+.flatpickr-weekdays span.flatpickr-weekday {
+    background-color: transparent !important;
+    color: #fff;
+}
+
+.flatpickr-day.selected {
+    background-color: #db2d20 !important;
+    border: none;
+}
+
+
+
 @media screen and (max-width: 768px) {
     .form__carwash_container {
         display: grid;

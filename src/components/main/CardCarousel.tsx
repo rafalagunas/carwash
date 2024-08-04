@@ -7,6 +7,9 @@ import './CardCarousel.css';
 import 'swiper/css';
 import 'swiper/css/pagination';
 
+
+
+
 // Import required modules
 import { Pagination } from 'swiper/modules';
 
@@ -18,6 +21,7 @@ import img3 from '../../assets/main/ZqyIXx5LeNNTxvyv_WhatsAppImage2024-08-02at1.
 import soap from '../../assets/svg/soap-solid.svg'
 import shapoo from '../../assets/svg/jug-detergent-solid.svg'
 import wheels from '../../assets/svg/wheel.svg'
+import scent from '../../assets/svg/spray-can-sparkles-solid.svg'
 
 // Puedes agregar más imágenes aquí y exportarlas
 
@@ -30,7 +34,7 @@ const CardCarousel = () => {
       services: [
         { icon: soap, label: 'Exterior' },
         { icon: shapoo, label: 'Shampoo' },
-        { icon: wheels, label: 'Rines' }
+        { icon: wheels, label: 'Rines' },
       ]
     },
     {
@@ -38,9 +42,13 @@ const CardCarousel = () => {
       title: 'Servicio Intermedio',
       imgSrc: img2, 
       services: [
-        { icon: '', label: 'Shampoo' },
-        { icon: '', label: 'Exterior' },
-        { icon: '', label: 'Rines' }
+        { icon: soap, label: 'Exterior' },
+        { icon: shapoo, label: 'Shampoo' },
+        { icon: wheels, label: 'Rines' },
+        { icon: scent, label: 'Interiores'},
+        { icon: '', label: 'Aspirado'},
+        { icon: '', label: 'Lavado de tapetes'},
+        { icon: '', label: 'Humectante plásticos y pieles'}
       ]
     },
     {
@@ -48,9 +56,14 @@ const CardCarousel = () => {
       title: 'Servicio Premium',
       imgSrc: img3, 
       services: [
-        { icon: 'steering-wheel', label: 'Exterior' },
-        { icon: 'wheel', label: 'Rines' },
-        { icon: 'wash', label: 'Shampoo' }
+        { icon: soap, label: 'Exterior' },
+        { icon: shapoo, label: 'Shampoo' },
+        { icon: wheels, label: 'Rines' },
+        { icon: '', label: 'Interiores'},
+        { icon: '', label: 'Aspirado'},
+        { icon: '', label: 'Lavado de tapetes'},
+        { icon: '', label: 'Humectante plásticos y pieles'},
+         { icon: '', label: 'Humectante plásticos y pieles'}
       ]
     }
   ];
@@ -85,11 +98,9 @@ const CardCarousel = () => {
               </div>
               <div className='sub__services'>
                 {service.services.map((item, index) => (
-                  <div key={index}>
-                    <div className='items'>
-                        <img width='25' height='25' src={item.icon} alt={item.label} />
-                        <p>{item.label}</p>
-                    </div>
+                  <div key={index} className='items'>
+                      <img width='25' height='25' src={item.icon} alt={item.label} />
+                      <p>{item.label}</p>
                   </div>
                 ))}
               </div>

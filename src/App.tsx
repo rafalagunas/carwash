@@ -13,8 +13,7 @@ function App() {
     <Router>
       <Suspense fallback={<div>Loading ViewLoading...</div>}>
         <RoutesWithNotFound>
-          <Route path="/" element={<Navigate to="/root" />} />
-          <Route path="/root" element={<RootPage />} />
+          <Route path="/" element={<RootPage />} />
           <Route path="/viewLoading" element={<ViewLoading />} />
         </RoutesWithNotFound>
       </Suspense>

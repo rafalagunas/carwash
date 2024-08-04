@@ -17,13 +17,12 @@
    
   }
   .footer__jllc {
-    display: grid;
-    place-items: center;
+    display: flex;
+    justify-content: center;
   }
   
   .footer__jllc-item {
     display: flex;
-    width: 150px;
     align-items: center;
     justify-content: space-between;
     
@@ -31,7 +30,7 @@
   .legal h4 {
     margin-bottom: 20px;
   }
-  
+
   .contact h4  {
     margin-bottom: 20px;
   }
@@ -52,7 +51,7 @@
   }
   
   .contact__item p {
-    margin-left: 20px;
+
     
     
   }

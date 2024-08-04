@@ -3,7 +3,13 @@ import './Form.css'
 import typesServices from '../../utils/form/typeServices.json'
 import typeCar from '../../utils/form/TypeOfCar.json'
 
+import "flatpickr/dist/themes/material_green.css";
+
+import Flatpickr from "react-flatpickr";
+
 const Form: React.FC = () => {
+
+    const [date, setDate] = useState<Date | null>(null);
 
     const [selectTypeServices, setSelectTypeServices] = useState<boolean>(false)
     const [selectedTypeService, setSelectedTypeService] = useState<number | null>(null)
@@ -95,7 +101,12 @@ const Form: React.FC = () => {
             </div>
             <div>
                 <label className='label__general'>Fecha y Hora</label>
-                <input className='inputs__general' placeholder='Ingresa la fecha y hora' type="text" />
+                <Flatpickr className='inputs__general'
+                    placeholder='Seleciona tu fecha'
+                    data-enable-time
+                    value={date ? [date] : []}
+                    onChange={([date]) => setDate(date)}
+                />
             </div>
         </div>
         <div className='btn__from_container'>

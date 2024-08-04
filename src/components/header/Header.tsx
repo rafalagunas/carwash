@@ -1,13 +1,15 @@
 import React from 'react'
 import './header.css'
 import { Link } from 'react-router-dom'
+import logo from '../../assets/svg/logo.png'
+import background from '../../assets/mexicano.png'
 
 const Header: React.FC = () => {
   return (
     <div className='hero'>
         <div className='hero__container'>
             <div className='hero__logo'>
-                <p>JLLC</p>
+                <img width='120' src={logo} alt="" />
             </div>
             <div className='nav__hero'>
                 <ul className='items__nav'>
@@ -25,6 +27,13 @@ const Header: React.FC = () => {
                     </li>
                     
                 </ul>
+            </div>
+            <div className="toggle">
+                <button className="toggle__botton">
+                    <span className="l1 span"></span>
+                    <span className="l2 span"></span>
+                    <span className="l3 span"></span>
+                </button>
             </div>
         </div>
     </div>
