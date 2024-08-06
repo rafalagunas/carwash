@@ -13,9 +13,10 @@ import "swiper/css/pagination";
 import { Pagination } from "swiper/modules";
 
 // Import images
-import img1 from "../../assets/main/express.png";
-import img2 from "../../assets/main/premium.png";
-import img3 from "../../assets/main/platinum.png";
+import img1 from "../../assets/main/1.png";
+import img2 from "../../assets/main/2.png";
+import img3 from "../../assets/main/3.png";
+import img4 from "../../assets/main/4.png";
 
 import soap from "../../assets/svg/soap-solid.svg";
 import shapoo from "../../assets/svg/jug-detergent-solid.svg";
@@ -23,7 +24,6 @@ import wheels from "../../assets/svg/wheel.svg";
 import scent from "../../assets/svg/spray-can-sparkles-solid.svg";
 import vacuum from "../../assets/svg/vacuum.svg";
 import rug from "../../assets/svg/rug-solid.svg";
-import drop from "../../assets/svg/droplet-solid.svg";
 import car from "../../assets/svg/car-solid.svg";
 import chemicalGuys from "../../assets/svg/chemical-guys.svg";
 import purplePower from "../../assets/svg/purple-power.svg";
@@ -107,7 +107,7 @@ const CardCarousel = () => {
     {
       id: 4,
       title: "Servicio Platino Plus",
-      imgSrc: img3,
+      imgSrc: img4,
       services: [
         {
           icon: soap,
