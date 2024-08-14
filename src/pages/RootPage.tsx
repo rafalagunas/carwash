@@ -1,7 +1,7 @@
-import React from 'react'
-import Header from '../components/header/Header'
-import Main from '../components/main/Main'
-import Footer from '../components/footer/Footer'
+import React from "react";
+import Header from "../components/header/Header";
+import Main from "../components/main/Main";
+import Footer from "../components/footer/Footer";
 
 const RootPage: React.FC = () => {
   return (
@@ -10,7 +10,7 @@ const RootPage: React.FC = () => {
       <Main />
       <Footer />
     </div>
-  )
-}
+  );
+};
 
-export default RootPage
+export default RootPage;

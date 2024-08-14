@@ -5,6 +5,14 @@ import Form from "./Form";
 
 import "./Main.css";
 
+import Gallery from "../main/Gallery";
+
+import img1 from "../../assets/gallery/img1.png";
+import img2 from "../../assets/gallery/img2.png";
+import img3 from "../../assets/gallery/img3.jpeg";
+import img4 from "../../assets/gallery/img4.png";
+const images = [img1, img2, img3, img4];
+
 const Main: React.FC = () => {
   return (
     <div className="main">
@@ -24,19 +32,9 @@ const Main: React.FC = () => {
           </p>
         </div>
       </div>
-      <div className="row__two">
-        <div className="our__title_container">
-          <p>
-            <span className="our__title">
-              Si tienes el auto sucio y necesitas una limpieza pero no tienes
-              tiempo de llevarlo a lavar
-            </span>{" "}
-            somos la mejor opción para ti, ofreciéndote la mejor calidad gracias
-            a que usamos los mejores productos del mercado para cuidar tu coche
-            y puntualidad porque sabemos que tu tiempo es lo más importante.
-          </p>
-        </div>
-      </div>
+      {/* <div className="row__two">
+        <Gallery images={images} />
+      </div> */}
       <div className="row__four">
         <div>
           <div className="title__container_our_services">
@@ -122,9 +120,9 @@ const Main: React.FC = () => {
       <div className="row__possession">
         <div className="title__possession">
           <p>
-            Recuerda al finalizar tu lavado, pedir tu tarjeta de cliente
-            frecuente en donde después de la séptima limpieza, te regalaremos un
-            lavado platino COMPLETAMENTE GRATIS.
+            Contamos con lavado a detalle de motor, sin pasar hidrolavadora para
+            no arriesgar tu vehículo. Para más servicios de este tipo, pregunta
+            por costo personalizado dependiendo del modelo y estado.
           </p>
         </div>
       </div>

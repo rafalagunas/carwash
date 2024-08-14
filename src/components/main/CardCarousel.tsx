@@ -78,7 +78,7 @@ const CardCarousel = () => {
         {
           icon: null,
           label:
-            "** Si el auto cuenta con sueciedad EXTREMA, se aplica un costo extra",
+            "** Si el auto cuenta con suciedad EXTREMA, se aplica un costo extra",
         },
       ],
     },
@@ -97,7 +97,7 @@ const CardCarousel = () => {
         {
           icon: null,
           label:
-            "** Si el auto cuenta con sueciedad EXTREMA, se aplica un costo extra",
+            "** Si el auto cuenta con suciedad EXTREMA, se aplica un costo extra",
         },
       ],
     },
@@ -133,7 +133,7 @@ const CardCarousel = () => {
         {
           icon: null,
           label:
-            "** Si el auto cuenta con sueciedad EXTREMA, se aplica un costo extra",
+            "** Si el auto cuenta con suciedad EXTREMA, se aplica un costo extra",
         },
       ],
     },
